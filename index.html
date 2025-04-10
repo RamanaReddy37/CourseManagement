@@ -1,32 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Course Management</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      text-align: center;
-    }
-    button {
-      padding: 10px 20px;
-      margin: 10px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-  </style>
+  <link rel="stylesheet" href="styles-index.css" />
 </head>
 <body>
-  <h1>Course Management</h1>
+  <div class="container">
+    <h1>Course Management</h1>
 
-  <div>
-    <button onclick="window.location.href='create.html'">Create Course</button>
-    <button onclick="window.location.href='update.html'">Update Course</button>
-    <button onclick="window.location.href='read.html'">Read Courses</button>
-    <button onclick="window.location.href='delete.html'">Delete Course</button>
+    
+
+    <div class="button-group">
+      <button onclick="window.location.href='create-course.html'">Create Course</button>
+      <button onclick="window.location.href='update.html'">Update Course</button>
+      <button onclick="window.location.href='read.html'">Read Courses</button>
+      <button onclick="window.location.href='delete.html'">Delete Course</button>
+    </div>
+
+    <p class="description">
+      Welcome to our Course Management system! Here you can register, update, browse, and manage courses easily.
+      Our programs in AI, ML, and Data Science are designed to enhance your skills, boost your career opportunities,
+      and keep you up to date with the latest tech trends.
+    </p>
   </div>
-
 </body>
 </html>
