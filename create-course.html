@@ -1,11 +1,26 @@
-<!-- create-course.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Register Course</title>
   <link rel="stylesheet" href="styles-create-course.css">
+  <style>
+    .home-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      text-decoration: none;
+      background: #007bff;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+    }
+    #formMessage {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
   <a href="index.html" class="home-btn">Home</a>
@@ -33,7 +48,8 @@
 
       <button type="submit">Register</button>
     </form>
-    
+
+    <p id="formMessage"></p>
   </div>
 
   <script src="create-course.js"></script>
