@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Management - Update</title>
+    <link rel="stylesheet" href="styles-update.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Update Student Details</h1>
+            <a href="index.html" class="home-btn">Home</a>
+        </header>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                    <th>Course</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="students-body"></tbody>
+        </table>
+
+        <div id="update-form-container" style="display: none;">
+            <h2>Update Student</h2>
+            <form id="update-form">
+                <input type="hidden" id="student-id">
+
+                <label for="studentName">Student Name:</label>
+                <input type="text" id="studentName" required>
+
+                <label for="studentEmail">Student Email:</label>
+                <input type="email" id="studentEmail" required>
+
+                <label for="studentPhone">Phone Number:</label>
+                <input type="text" id="studentPhone" required>
+
+                <label for="studentAddress">Address:</label>
+                <input type="text" id="studentAddress" required>
+
+                <label for="course">Select Course:</label>
+                <select id="course" required>
+                    <option value="AI">AI</option>
+                    <option value="ML">ML</option>
+                    <option value="DS">DS</option>
+                </select>
+
+                <button type="submit">Update</button>
+                <button type="button" onclick="cancelUpdate()">Cancel</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="update.js"></script>
+</body>
+
+</html>
